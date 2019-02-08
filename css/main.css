@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "DIN_Light";
+  src: url("../font/FF_DIN_Light.otf");
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #1c1c1c;
+  color: #777777;
+
+  font-family: "DIN_Light";
+  font-size: 1.3em;
+}
+
+a,
+a:active {
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.bg-light {
+  background-color: #232323;
+}
+
+#content {
+  width: 70%;
+  margin: auto;
+  line-height: 2.5;
+}
