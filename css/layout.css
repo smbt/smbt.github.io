@@ -1,0 +1,161 @@
+.logo {
+  background: url("../img/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+  top: 3.5em;
+  margin: auto;
+  width: 100%;
+  height: 50%;
+}
+
+.frame {
+  color: white;
+}
+
+.bar-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 3.5em;
+  background: #232323;
+}
+
+.bar-social {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3.5em;
+  background: #232323;
+}
+
+.bar-side {
+  display: none;
+}
+
+/* 
+ * .bar-inside-parent and .bar-inside-child are
+ * needed for vertikal centering
+ */
+.bar-inside-parent {
+  position: relative;
+  height: 100%;
+}
+
+.bar-inside-child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.menu-links-container {
+  display: none;
+}
+
+.social-links {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  width: 70%;
+  margin: 5em auto 10em auto;
+  line-height: 2.5;
+}
+
+/*
+ * MOBILE CSS
+ */
+@media (max-width: 767px) {
+  .menu-icon-threelines {
+    background: url("../img/threelines.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin: 1em 2em 0 auto;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+  }
+
+  .bar-menu-open .menu-icon-threelines {
+    display: none;
+  }
+
+  .bar-menu-open .menu-links-container {
+    display: block;
+    width: 100%;
+    padding: 2em 0 2em 0;
+    line-height: 3;
+    background: #232323;
+  }
+
+  .bar-menu-open .menu-links {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+/* 
+ * DESKTOP CSS 
+ */
+@media (min-width: 768px) {
+  .bar-menu {
+    background: #1c1c1c;
+    border-bottom: 1px solid rgb(45, 45, 45);
+  }
+
+  .bar-social {
+    top: 0;
+    right: 0;
+    width: 3.5em;
+    height: 100%;
+    background: #1c1c1c;
+    border-left: 1px solid rgb(45, 45, 45);
+  }
+
+  .bar-side {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5.5em;
+    height: 100%;
+    background: #1c1c1c;
+    border-right: 1px solid rgb(45, 45, 45);
+  }
+
+  .logo-bar-side {
+    height: 3em;
+  }
+
+  .menu-links-container {
+    display: block;
+  }
+
+  .menu-links {
+    width: 50%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social-links {
+    height: 40%;
+    writing-mode: vertical-lr;
+  }
+
+  .content {
+    width: 50%;
+  }
+}

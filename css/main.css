@@ -10,29 +10,29 @@ html {
 body {
   height: 100%;
   margin: 0;
-  background-color: #1c1c1c;
+  background: #1c1c1c;
   color: #777777;
 
   font-family: "DIN_Light";
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 a,
-a:active {
-  color: #1c1c1c;
+a:active,
+a:hover,
+a:visited {
+  color: white;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 .bg-light {
-  background-color: #232323;
+  background: #232323;
 }
 
-#content {
-  width: 70%;
-  margin: auto;
-  line-height: 2.5;
+.text-white {
+  color: white;
+}
+
+h1 {
+  color: white;
 }
