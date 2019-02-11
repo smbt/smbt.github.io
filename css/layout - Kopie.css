@@ -85,9 +85,9 @@
     cursor: pointer;
   }
 
-  /* .bar-menu-open .menu-icon-threelines {
+  .bar-menu-open .menu-icon-threelines {
     display: none;
-  } */
+  }
 
   .bar-menu-open .menu-links-container {
     display: block;
