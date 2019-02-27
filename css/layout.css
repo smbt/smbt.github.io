@@ -14,14 +14,14 @@
 .bar-menu {
   background: #232323;
 }
-
+/* 
 .bar-social {
   position: fixed;
   bottom: 0;
   width: 100%;
   height: 3em;
   background: #232323;
-}
+} */
 
 .bar-side {
   display: none;
@@ -29,7 +29,7 @@
 
 /* 
  * .bar-inside-parent and .bar-inside-child are
- * needed for vertikal centering
+ * needed for vertical centering
  */
 .bar-inside-parent {
   position: relative;
@@ -57,9 +57,9 @@
 }
 
 /*
- * MOBILE CSS
+ * MOBILE ONLY
  */
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .hamburger-icon-container {
     margin-left: auto;
     padding: 1em;
@@ -95,9 +95,9 @@
 }
 
 /* 
- * DESKTOP CSS 
+ * DESKTOP 
  */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .bar-menu {
     position: fixed;
     top: 0;
