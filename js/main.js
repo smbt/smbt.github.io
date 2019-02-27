@@ -5,7 +5,7 @@ timeline.timeScale(tScale);
 
 var openMenu = function() {
   timeline
-    .to(".menu-icon", 0, { backgroundImage: "url(../img/cross.png)" })
+    .to(".hamburger-icon", 0, { backgroundImage: "url(../img/cross.png)" })
     .to(".menu-links-container", 0, { display: "block" })
     .from(".menu-links-container", 0.2, { height: 0 })
     .staggerFrom(".menu-links a", 0.2, { opacity: 0 }, 0.05, "-=0.15");
@@ -14,7 +14,7 @@ var openMenu = function() {
 
 var closeMenu = function() {
   timeline
-    .to(".menu-icon", 0, { backgroundImage: "url(../img/threelines.png)" })
+    .to(".hamburger-icon", 0, { backgroundImage: "url(../img/threelines.png)" })
     .to(".menu-links a", 0, { opacity: 0 })
     .to(".menu-links-container", 0.2, { height: 0 })
     .to(".menu-links-container", 0, { display: "none" })
@@ -23,7 +23,7 @@ var closeMenu = function() {
   menuOpen = 0;
 };
 
-$(".menu-icon").click(function() {
+$(".hamburger-icon").click(function() {
   if (menuOpen) {
     closeMenu();
   } else {

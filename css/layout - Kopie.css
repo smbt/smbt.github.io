@@ -68,13 +68,13 @@
  * MOBILE CSS
  */
 @media (max-width: 767px) {
-  .menu-icon-container {
+  .hamburger-icon-container {
     margin-left: auto;
     padding: 1em;
     width: 2em;
   }
 
-  .menu-icon-threelines {
+  .hamburger-icon-threelines {
     background: url("../img/threelines.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -85,7 +85,7 @@
     cursor: pointer;
   }
 
-  .bar-menu-open .menu-icon-threelines {
+  .bar-menu-open .hamburger-icon-threelines {
     display: none;
   }
 
