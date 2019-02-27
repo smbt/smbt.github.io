@@ -6,4 +6,19 @@
 #bar-top {
   width: 100%;
   height: 3.5em;
+  position: fixed;
+}
+
+#bar-bottom {
+  width: 100%;
+  position: fixed;
+  height: 2.5em;
+  bottom: 0;
+}
+
+.flex-container {
+  padding: 0 20% 0 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
