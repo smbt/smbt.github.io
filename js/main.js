@@ -23,7 +23,7 @@ var closeMenu = function() {
   menuOpen = 0;
 };
 
-$(".hamburger-icon").click(function() {
+$(".hamburger-icon-container").click(function() {
   if (menuOpen) {
     closeMenu();
   } else {
